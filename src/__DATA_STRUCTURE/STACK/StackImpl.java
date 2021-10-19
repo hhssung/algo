@@ -13,7 +13,7 @@ public class StackImpl<T> implements Stack<T> {
 
 	@Override
 	public boolean isEmpty() {
-		return size==0;
+		return size == 0;
 	}
 
 	@Override
@@ -39,8 +39,9 @@ public class StackImpl<T> implements Stack<T> {
 
 	@Override
 	public void clear() {
-		top = null;
-		size = 0;
+		while (size != 0) {
+			pop();
+		}
 	}
 
 	@Override
