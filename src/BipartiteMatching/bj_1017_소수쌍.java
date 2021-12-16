@@ -84,6 +84,7 @@ public class bj_1017_소수쌍 {
 			desMatchIdx[target_idx] = 0;
 			int cnt = 0;
 			// 틀린부분: 항상 새로운 boolean 배열을 넣어야 됨
+			
 			for (int i = 1; i < src.length; i++) {
 				if (DFS(new boolean[src.length], graph, desMatchIdx, i, target_idx)) {
 					cnt++;
@@ -98,6 +99,7 @@ public class bj_1017_소수쌍 {
 	// 이분매칭
 	private static boolean DFS(boolean[] visited, ArrayList<ArrayList<Integer>> graph, int[] desMatchIdx, int now,
 			int target) {
+		
 		for (int des : graph.get(now)) {
 			if (des == target) {
 				continue;
