@@ -68,7 +68,6 @@ public class bj_1097_마법의문자열 {
 			if (P.charAt(i) == P.charAt(j)) {
 				j++;
 			}
-
 			pi[i] = j;
 		}
 	}
@@ -93,7 +92,6 @@ public class bj_1097_마법의문자열 {
 				j = pi[j - 1];
 			}
 		}
-
 		return result - 1;
 	}
 }
